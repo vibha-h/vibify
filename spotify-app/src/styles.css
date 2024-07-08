@@ -1,0 +1,135 @@
+body {
+    background-color: #191414; /* Set your desired background color */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    text-align:center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .header {
+    color: #1DB954;
+    font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Make the buttons rounded */
+    background-color: #1DB954; /* Set your desired button color */
+    color: #191414;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10px; /* Add margin to create space between buttons */
+  }
+  button:hover {
+    background-color: #1ed760;
+    font-size: 26px;
+  }
+  
+
+  .top-track-list{
+    color: #1ed760;
+  }
+
+  .drop-down{
+    background-color: #191414;
+    color: #1ed760;
+    font-size: 15px;
+  }
+
+.home-button {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Make the buttons rounded */
+    background-color: #1DB954; /* Set your desired button color */
+    color: #191414;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 auto;
+    display: block;
+    width: 10%;
+    text-align: center;
+}
+
+  /* loading component animation reference: https://codepen.io/nzbin/pen/GGrXbp */
+  .loading {
+    position: fixed;
+    left: -10099px;
+    transform: translate(8500%, 1000%);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #1ed760;
+    color: #1ed760;
+    box-shadow: 9999px 0 0 -5px;
+    animation: loading 1.5s infinite linear;
+    animation-delay: 0.25s;
+  }
+  .loading::before,
+  .loading::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #1ed760;
+    color: #1ed760;
+  }
+  .loading::before {
+    box-shadow: 9984px 0 0 -5px;
+    animation: loading-before 1.5s infinite linear;
+    animation-delay: 0s;
+  }
+  .loading::after {
+    box-shadow: 10014px 0 0 -5px;
+    animation: loading-after 1.5s infinite linear;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes loading-before {
+    0% {
+      box-shadow: 9984px 0 0 -5px;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -5px;
+    }
+  }
+  @keyframes loading {
+    0% {
+      box-shadow: 9999px 0 0 -5px;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px;
+    }
+  }
+  @keyframes loading-after {
+    0% {
+      box-shadow: 10014px 0 0 -5px;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -5px;
+    }
+  }
